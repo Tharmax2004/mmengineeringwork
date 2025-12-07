@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Engineering - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./image/company logo.jpg" alt="MM Engineering works Logo">
+                <span>MM Engineering works</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="fade-in">Our Projects</h1>
+            <p class="fade-in-delay">Upload images with descriptions for your projects</p>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-container fade-in">
+                <h2>Upload Project Image</h2>
+                
+                <!-- Image Upload Form with Description -->
+                <div class="image-upload-form">
+                    <form id="imageForm" class="upload-form">
+                        <div class="form-group">
+                            <label for="imageFile">Select Image *</label>
+                            <input type="file" id="imageFile" accept="image/*" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="imageDescription">Description *</label>
+                            <textarea id="imageDescription" rows="4" placeholder="Enter a description for this project image..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn-primary">Add to Gallery</button>
+                    </form>
+                    <div id="imageFormPreview" class="form-image-preview"></div>
+                    <div id="formSuccessMessage" class="form-success-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Project Gallery</h2>
+            <div id="projectGallery" class="project-gallery">
+                <p class="empty-gallery">No project images uploaded yet. Upload an image with description above to see it here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

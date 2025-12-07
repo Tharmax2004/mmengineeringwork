@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Engineering - Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./image/company logo.jpg" alt="MM Engineering works Logo">
+                <span>MM Engineering works</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="fade-in">Image Gallery</h1>
+            <p class="fade-in-delay">Upload and showcase your images with descriptions</p>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-container fade-in">
+                <h2>Upload New Image</h2>
+                
+                <!-- Image Upload Form with Description -->
+                <div class="image-upload-form">
+                    <form id="galleryImageForm" class="upload-form">
+                        <div class="form-group">
+                            <label for="galleryImageFile">Select Image *</label>
+                            <input type="file" id="galleryImageFile" accept="image/*" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="galleryImageDescription">Description *</label>
+                            <textarea id="galleryImageDescription" rows="4" placeholder="Enter a description for this image..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn-primary">Add to Gallery</button>
+                    </form>
+                    <div id="galleryFormPreview" class="form-image-preview"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Display -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Gallery</h2>
+            <div id="galleryDisplay" class="gallery-display">
+                <p class="empty-gallery">No images uploaded yet. Upload images above to see them here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
